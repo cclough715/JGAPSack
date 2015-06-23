@@ -7,6 +7,13 @@ public class Knapsack {
 	private ArrayList<Item> sack;
 	private double maxWeight;
 	
+	/**
+	 * Creates an empty Knapsack that can hold a specified weight
+	 * 
+	 * @param max The max weight this Knapsack can hold
+	 * @throws Exception If a non-positive number is passed to max this will
+	 * 		throw an exeption
+	 */
 	public Knapsack(double max) throws Exception{
 		if(max <= 0) throw new Exception("Max weight must be positive");
 		maxWeight = max;
